@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="Karina Pichardo" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Product Landing Page</title>
+</head>
+
+<body>
+    <div id="page-wrapper">
+        <header id="header">
+            <div class="logo">
+                <img src="images/original_trombones.png" id="header-img" alt="original trombones logo">
+            </div>
+            <nav id="nav-bar">
+                <ul>
+                    <li class="nav-link"><a href="#features">Features</a></li>
+                    <li class="nav-link"><a href="#product-video">How It Works</a></li>
+                    <li class="nav-link"><a href="#pricing">Pricing</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="main">
+            <section id="user-info">
+                <h1>Handcrafted, home-made masterpieces</h1>
+                <form id="form" action="https://www.freecodecamp.com/email-submit">
+                    <input type="email" placeholder="Enter your email address" name="email" id="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" size="30">
+                    <div id="form-control">
+                        <input type="submit" id="submit" value="Submit">
+                    </div>
+                </form>
+            </section>
+
+            <div class="container">
+                <section id="features">
+                    <h2>Premium Materials</h2>
+                    <p>Our trombones use the shinest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+                    <h2>Fast Shipping</h2>
+                    <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+                    <h2>Quality Assurance</h2>
+                    <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+                </section>
+
+                <section id="how-it-works">
+                    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </section>
+                <section id="pricing" class="card">
+                    <div class="card-heading">
+                        <h2>TENOR TROMBONE</h2>
+                    </div>
+                    <h3>$600</h3>
+                    <ul>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum dolor.</li>
+                        <li>Lorem ipsum.</li>
+                    </ul>
+                    <button class="select-button">SELECT</button>
+                </section>
+                <section class="card">
+                    <div class="card-heading">
+                        <h2>BASS TROMBONE</h2>
+                    </div>
+                    <h3>$900</h3>
+                    <ul>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum dolor.</li>
+                        <li>Lorem ipsum.</li>
+                    </ul>
+                    <button class="select-button">SELECT</button>
+
+                </section>
+                <section class="card">
+                    <div class="card-heading">
+                        <h2>VALVE TROMBONE</h2>
+                    </div>
+                    <h3>$1200</h3>
+                    <ul>
+                        <li>Plays similar to a Trumpet</li>
+                        <li>Great for Jazz Bands</li>
+                        <li>Lorem ipsum dolor.</li>
+                        <li>Lorem ipsum.</li>
+                    </ul>
+                    <button class="select-button">SELECT</button>
+                </section>
+            </div>
+        </main>
+        <footer>
+
+            <ul>
+                <li><a href="#top">Privacy</a></li>
+                <li><a href="#top">Terms</a></li>
+                <li><a href="#top">Contact</a></li>
+            </ul>
+            <p class="copyright">Copyright 2021, Original Trombones</p>
+        </footer>
+    </div>
+</body>
+
+</html>
