@@ -5,6 +5,11 @@
 body {
     font-family: 'Lato', Sans-Serif;
     background-color: #eee;
+    overflow-x: hidden;
+}
+
+#page-wrapper {
+    position: relative;
 }
 
 li {
@@ -16,8 +21,251 @@ a {
     text-decoration: none;
 }
 
-#header-img {
-    max-width: 100%;
-    height: auto;
-    width: 300px;
+.logo > img {
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    min-height: 75px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #eee;
+    width: 100%;
+}
+
+nav > ul {
+    width: 35vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+#user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#features > p {
+    margin-top: -10px;
+}
+
+h1 {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+#user-info input[type="email"] {
+    max-width: 275px;
+    width: 100%;
+    padding: 5px;
+}
+
+#user-info input[type="submit"] {
+    max-width: 150px;
+    width: 100%;
+    height: 30px;
+    margin: 15px 0;
+    border: 0;
+    background-color: #f1c40f;
+}
+
+#user-info input[type="submit"]:hover {
+    background-color: #ff8c00;
+}
+
+.btn {
+    padding: 0 20px;
+    font-size: 1em;
+    font-weight: 900;
+    text-transform: uppercase;
+    border-radius: 2px;
+    background: transparent;
+    cursor: pointer;
+}
+
+#features {
+    margin: 80px auto 80px auto;
+}
+
+#video {
+    margin: auto;
+    display: block;
+}
+
+#how-it-works {
+    margin: 60px auto 60px auto;
+}
+
+#pricing {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.product {
+    border: 1px solid #000;
+    display: flex;
+    width: 900px;
+    margin: 30px 30px auto auto;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.product > .level {
+    background-color: #ddd;
+    color: black;
+    padding: 15px 0;
+    width: 100%;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+.product > h2 {
+    margin-top: 0;
+}
+
+.product > h3 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.product > ul {
+    margin: 15px 0;
+    margin-top: -10px;
+}
+
+.product > ul > li {
+    padding: 5px 0;
+    margin-left: -25px;
+    margin-top: 0;
+}
+
+.product > button {
+    border: 0;
+    margin: 15px 0;
+    background-color: #f1c40f;
+    font-weight: 400;
+    font-size: 1em;
+    height: 40px;
+    border-radius: 3px;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff8c00;
+    transition: all .4s ease;
+}
+
+footer {
+    background-color: #ddd;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 100%;
+}
+
+footer > ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer > ul > li {
+    padding: 0 10px;
+}
+
+.copyright {
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9em;
+    color: #444;
+}
+
+@media (max-width: 800px) {
+    #pricing {
+        flex-direction: column;
+    }
+
+    .product {
+        max-width: 300px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 750px) {
+    header {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 700px) {
+    .logo {
+        margin-top: 15px;
+        width: 100%;
+        position: relative;
+    }
+
+    .logo > img {
+        margin: 0 auto;
+    }
+
+    #nav-bar > ul {
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        align-content: center;
+        text-align: center;
+        padding: 0 50px;
+        flex-direction: column;
+    }
+
+    #user-info {
+        margin-top: 60px;
+    }
+}
+
+@media (max-width: 800px) {
+    #nav-bar > ul {
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        align-content: center;
+        text-align: center;
+        padding: 0 50px;
+        flex-direction: column;
+    }
+
+    ul > li {
+        margin-bottom: 10px;
+    }
+
+    #user-info {
+        margin-top: 85px;
+    }
 }
